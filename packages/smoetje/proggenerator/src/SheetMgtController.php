@@ -2,11 +2,12 @@
 
 namespace Smoetje\Proggenerator;
 
-use App\GoogleModel;
+use App\Http\Controllers\Controller;
+use Smoetje\Proggenerator\models\GoogleModel;
 use Illuminate\Http\Request;
-use App\Custom\CreateProg\CreateProg;
-use App\Modules\ApiResponse;
-use App\Http\Controllers\GoogleSheetMgtController;
+use Smoetje\Proggenerator\CreateProg\CreateProg;
+use Smoetje\Proggenerator\modules\ApiResponse;
+use Smoetje\Proggenerator\GoogleSheetMgtController;
 
 class SheetMgtController extends Controller
 {

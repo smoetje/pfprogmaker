@@ -21,3 +21,6 @@ Route::get('/test', function() {
     $testje->getClient();
     dd($testje);
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -13,8 +13,11 @@ class ProggeneratorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/routes.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->publishes([
+            __DIR__.'/config/google.php' => config_path('google.php'),
+        ]);
     }
 
     /**
@@ -24,6 +27,6 @@ class ProggeneratorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('smoetje\proggenerator\SheetMgtController');
+        $this->app->make('Smoetje\Proggenerator\SheetMgtController');
     }
 }

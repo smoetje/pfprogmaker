@@ -1,6 +1,6 @@
 <?php
 
-namespace Smoetje\Proggenerator;
+namespace Smoetje\Proggenerator\models;
 
 use Illuminate\Database\Eloquent\Model;
 
