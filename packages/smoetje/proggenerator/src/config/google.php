@@ -17,8 +17,8 @@ return [
     | https://developers.google.com/console
     |
     */
-    'client_id'       => env('GOOGLE_CLIENT_ID', '281089256979-ep1p5cpj1kfh3ps8l9lujtvbhvv6hfq6.apps.googleusercontent.com'),
-    'client_secret'   => env('GOOGLE_CLIENT_SECRET', 'z05PMsmy0dBX116IDN9Yx6Ni'),
+    'client_id'       => env('GOOGLE_CLIENT_ID', ''),
+    'client_secret'   => env('GOOGLE_CLIENT_SECRET', ''),
     'redirect_uri'    => env('GOOGLE_REDIRECT', ''),
     'scopes'          => [],
     'access_type'     => 'online',
@@ -33,7 +33,7 @@ return [
     | a Server key, and not a Browser key.
     |
     */
-    'developer_key' => env('GOOGLE_DEVELOPER_KEY', 'AIzaSyBtBq_6mRU5oigwzpKrWyXKtKbAFVcw55o'),
+    'developer_key' => env('GOOGLE_DEVELOPER_KEY', ''),
 
     /*
     |----------------------------------------------------------------------------
@@ -62,9 +62,9 @@ return [
     |----------------------------------------------------------------------------
     |
     | Set any additional config variables supported by the Google Client
-    | Details can be found here: 
+    | Details can be found here:
     | https://github.com/google/google-api-php-client/blob/master/src/Google/Client.php
-    | 
+    |
     | NOTE: If client id is specified here, it will get over written by the one above.
     |
     */

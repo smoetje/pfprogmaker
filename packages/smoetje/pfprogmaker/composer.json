@@ -1,0 +1,26 @@
+{
+    "name": "smoetje/pfprogmaker",
+    "description": "Programma Maker for Paulusfeesten",
+    "authors": [
+        {
+            "name": "Nicolas Ramoudt",
+            "email": "nicolas.ramoudt@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "revolution/laravel-google-sheets": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Smoetje\\Pfprogmaker\\": "/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Smoetje\\Pfprogmaker\\PfprogmakerServiceProvider"
+            ]
+        }
+    }
+}
