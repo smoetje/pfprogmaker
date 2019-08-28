@@ -11,15 +11,24 @@
 |
 */
 
+use App\packages\Testapp;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/test', function() {
-    print("Testing app");
-    $testje = new \smoetje\Testapp();
-    $testje->getClient();
-    dd($testje);
+    //print("Testing app");
+//    dump(get_declared_classes());
+    $testje = new Smoetje\Pfprogmaker\Progmaker\Progmaker();
+    $testje->new();
+
+
+//$testje = new \smoetje\testapp\Testapp();
+//    $testje = new \smoetje\testapp\Runner();
+//    $testje = new \smoetje\Testapp();
+//    $testje->getClient();
+//    dd($testje);
 });
 Auth::routes();
 

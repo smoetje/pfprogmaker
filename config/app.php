@@ -167,6 +167,7 @@ return [
          */
 
         Smoetje\Proggenerator\ProggeneratorServiceProvider::class,
+        Smoetje\Pfprogmaker\PfprogmakerServiceProvider::class,
 
         /*
          * Application Service Providers...
